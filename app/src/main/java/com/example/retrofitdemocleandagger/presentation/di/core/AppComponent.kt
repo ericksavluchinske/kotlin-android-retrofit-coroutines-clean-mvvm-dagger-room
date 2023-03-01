@@ -1,5 +1,6 @@
 package com.example.retrofitdemocleandagger.presentation.di.core
 
+import com.example.retrofitdemocleandagger.presentation.di.album.AlbumSubComponent
 import dagger.Component
 import javax.inject.Singleton
 
@@ -15,5 +16,7 @@ import javax.inject.Singleton
     CacheDataModule::class
 ])
 interface AppComponent {
+
+    fun albumSubComponent(): AlbumSubComponent.Factory
 
 }
