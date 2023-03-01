@@ -8,6 +8,7 @@ import dagger.Provides
 
 @Module
 class AlbumModule {
+    @AlbumScope
     @Provides
     fun provideAlbumsViewModelFactory(
         getAlbumsUseCase: GetAlbumsUseCase,
