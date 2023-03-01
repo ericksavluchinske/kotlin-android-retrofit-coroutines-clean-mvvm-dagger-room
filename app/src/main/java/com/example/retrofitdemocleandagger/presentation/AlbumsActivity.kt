@@ -55,4 +55,18 @@ class AlbumsActivity : AppCompatActivity() {
             }
         })
     }
+
+    private fun updateAlbums(){
+        binding.albumsProgressBar.visibility = View.VISIBLE
+        val response = albumsViewModel.updateAlbums()
+        response.observe(this, Observer {
+            if (it != null){
+                adapter.setList(it)
+                adapter.notifyDataSetChanged()
+                binding.albumsProgressBar.visibility = View.GONE
+            }else{
+                binding.albumsProgressBar.visibility = View.GONE
+            }
+        })
+    }
 }
