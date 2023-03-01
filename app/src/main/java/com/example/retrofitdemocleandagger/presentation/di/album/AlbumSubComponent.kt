@@ -1,6 +1,6 @@
 package com.example.retrofitdemocleandagger.presentation.di.album
 
-import com.example.retrofitdemocleandagger.AlbumsActivity
+import com.example.retrofitdemocleandagger.presentation.AlbumsActivity
 import dagger.Subcomponent
 
 @AlbumScope
