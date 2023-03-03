@@ -1,5 +1,7 @@
 # Consuming REST API using Retrofit, Kotlin Coroutines, Clean Architecture + MVVM and Room Database
 
+![readme_header.png](./readme_header.png)
+
 Criei este projeto para aplicar meus conhecimentos sobre o consumo de uma API REST utilizando Retrofit, Kotlin Coroutines, Clean Architecture + MVVM, Dagger, Room, DataBinding, RecyclerView.
 O projeto foi desenvolvido utilizando a linguagem de programação Kotlin e a arquitetura Clean Architecture + MVVM. Ele consiste em um app Android nativo, o qual possui uma simples tela que exibe uma lista de álbuns fornecida pela API [JSONPlaceHolder](https://jsonplaceholder.typicode.com/).
 O App consome os dados da API referida e os salva em um banco de dados local (Room) para permitir consulta offline e evitar várias requisições para a API.
